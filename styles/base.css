@@ -1,0 +1,238 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #222;
+}
+
+/* Header */
+header {
+    background: #003366;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    /* MÁS GRANDE Y DESTACADO */
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+header .highlight {
+    color: #ffb703;
+}
+
+/* Nav */
+
+nav {
+    background: #222;
+    /* gris oscuro diferente del azul */
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    /* DISTRIBUIDOS EN TODO EL ANCHO */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    flex: 1;
+    /* Cada enlace ocupa el mismo espacio */
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    /* MÁS GRANDE */
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background: #444;
+    /* un gris más claro para hover */
+    color: #ffb703;
+    /* mantiene coherencia con el highlight */
+}
+
+/* Grid */
+.main-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.left-column,
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Cards */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    background: #00509E;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+/* About Me */
+.about-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.profile-img {
+    max-width: 250px;
+    /* Más grande que la screenshot */
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.about-wrapper p {
+    flex: 1;
+}
+
+/* City Info */
+.screenshot-img {
+    max-width: 180px;
+    /* Más pequeña que la profile */
+    border-radius: 8px;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+/* Resources */
+.web-resources {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* la sección ocupa toda la columna */
+}
+
+.web-resources ul {
+    list-style-type: disc;
+    /* 🔑 activa viñetas tradicionales */
+    list-style-position: inside;
+    /* 🔑 viñeta dentro, alineada con texto */
+    margin: 0;
+    padding: 0 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* 🔑 reparte uniformemente de arriba a abajo */
+    height: 100%;
+}
+
+.web-resources li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.web-resources a {
+    color: #00509E;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.web-resources a:hover {
+    text-decoration: underline;
+    color: #003366;
+}
+
+/* Footer */
+footer {
+    background: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer span {
+    font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .screenshot-img {
+        max-width: 160px;
+        margin: 0 auto;
+    }
+}
+
+/* Estilo de contenido principal */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* izquierda y derecha */
+    gap: 1.25rem;
+    align-items: stretch;
+    /* 🔑 asegura que ambas columnas tengan la misma altura */
+}
+
+main h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+    color: #003366;
+    /* consistente con header */
+}
+
+main p {
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+}
+
+main ul {
+    font-size: 1.15rem;
+    line-height: 1.6;
+}

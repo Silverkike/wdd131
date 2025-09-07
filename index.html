@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title>WDD 131 – Dynamic Web Fundamentals – Carlos Enrique Guardado Cruz</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals | Carlos Enrique Guardado Cruz | Personal webpage / landing page course" >
+    <meta name="author" content="Carlos Enrique Guardado Cruz" >
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- Script -->
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals – <span class="highlight">Carlos E. Guardado</span></h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/TU_USUARIO" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank"
+                        rel="noopener">Scriptures</a></li>
+                <li><a href="./final-project/" target="_blank" rel="noopener">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-grid">
+        <!-- Columna izquierda -->
+        <div class="left-column">
+            <section class="card about-me">
+                <h2>About Me</h2>
+                <div class="about-wrapper">
+                    <img src="images/profile.jpg" alt="Enrique's profile photo" class="profile-img" >
+                    <p>I’m Enrique, an emergency operator at 911 with over 20 years of experience helping people in
+                        critical situations.
+                        I’m currently studying artificial intelligence, software development, and video game design,
+                        aiming to grow
+                        professionally and apply technology to create useful and innovative solutions.</p>
+                </div>
+            </section>
+
+            <section class="card city-info">
+                <h2>San Salvador, El Salvador</h2>
+                <img src="images/project-screenshot.jpg" alt="Project Screenshot" class="screenshot-img" >
+                <p>San Salvador, the vibrant capital of El Salvador, blends modernity and tradition in a setting
+                    surrounded by mountains
+                    and volcanoes. It is a lively city with shopping centers, museums, and an active cultural life that
+                    reflects the warmth
+                    of its people. Its parks, such as Cuscatlán and Bicentenario, offer green spaces ideal for
+                    relaxation, while its
+                    viewpoints, like the San Salvador volcano, provide breathtaking panoramas. On top of that, its
+                    gastronomy—led by the
+                    famous pupusas—makes every visit a unique experience.</p>
+            </section>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="right-column">
+            <section class="card web-resources">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS-Tricks</a></li>
+                    <li><a href="https://caniuse.com/" target="_blank" rel="noopener">Can I Use</a></li>
+                    <li><a href="https://stackoverflow.com/" target="_blank" rel="noopener">Stack Overflow</a></li>
+                    <li><a href="https://web.dev/" target="_blank" rel="noopener">Web.dev</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> 💻 Carlos Enrique Guardado Cruz 💻 El Salvador</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
