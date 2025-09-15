@@ -1,0 +1,31 @@
+/* Google Font */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+/* Agrupamos header, main y footer */
+header,
+main,
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #cce5ff;
+}
+
+/* Grid de una sola columna */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Estilo para las secciones */
+section {
+    padding: 1rem;
+    background-color: #ffffff;
+}
