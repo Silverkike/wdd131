@@ -81,9 +81,17 @@ main {
 
 main h1 {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
+        /* Centra el texto */
+        font-size: 3rem;
+        /* Hazlo más grande y visible */
+        margin-bottom: 30px;
+        /* Espacio con respecto a las imágenes */
+        font-family: 'Story Script', cursive;
+        /* Usa tu fuente decorativa */
+        color: blue;
+        /* Combina con el header */
 }
+
 
 /* Footer */
 footer {
