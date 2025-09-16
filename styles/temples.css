@@ -79,17 +79,17 @@ main {
     padding: 20px;
 }
 
-main h1 {
+main h2 {
     text-align: center;
-        /* Centra el texto */
-        font-size: 3rem;
-        /* Hazlo más grande y visible */
-        margin-bottom: 30px;
-        /* Espacio con respecto a las imágenes */
-        font-family: 'Story Script', cursive;
-        /* Usa tu fuente decorativa */
-        color: blue;
-        /* Combina con el header */
+    /* Centrado */
+    font-size: 4rem;
+    /* Bien grande */
+    margin: 40px 0 30px 0;
+    /* Espacio arriba y abajo */
+    font-family: 'Story Script', cursive;
+    color: blue;
+    font-weight: normal;
+    /* Que se vea elegante */
 }
 
 
