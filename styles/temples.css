@@ -19,9 +19,10 @@ header {
 }
 
 /* H1 grande y legible */
-header h1 {
+header .site-title {
     font-family: 'Story Script', cursive;
     font-size: 5rem;
+    margin: 0;
 }
 
 /* Nav */
@@ -94,4 +95,8 @@ footer {
     font-size: 1.5rem;
     margin-top: 40px;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul.show {
+    display: flex;
 }
