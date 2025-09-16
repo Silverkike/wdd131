@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     templeImages.forEach(img => {
         img.addEventListener('click', () => {
             const templeName = img.alt;
-            alert(`¡Has hecho clic en la imagen del ${templeName}!`);
+            alert(`You clicked on the image of the ${templeName}!`);
         });
     });
 
