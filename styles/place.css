@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2') format('woff2'),
+        url('https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu5mxK.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc-.woff2') format('woff2'),
+        url('https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfChc-.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
 :root {
     --font-base: 'Roboto', sans-serif;
     --clr-es-blue: blue;
