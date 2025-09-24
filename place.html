@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilamatepec Volcano</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>ILAMATEPEC VOLCANO</h1>
+    </header>
+
+    <!-- Franja de color -->
+    <div class="color-band"></div>
+
+    <main>
+        <div class="image-container">
+            <img src="images/volcan-ilamatepec-small.webp" alt="Ilamatepec Volcano Crater" loading="lazy" srcset="
+          images/volcan-ilamatepec-small.webp 480w,
+          images/volcan-ilamatepec-medium.webp 768w,
+          images/volcan-ilamatepec-large.webp 1200w
+        " sizes="(max-width:600px) 100vw,
+               (max-width:1200px) 80vw,
+               1200px">
+
+            <!-- PANEL DATA -->
+            <section class="data">
+                <h2>Data</h2>
+                <p><span class="label">Area:</span> 2,083 m</p>
+                <p><span class="label">Population:</span> 6,486,000</p>
+                <p><span class="label">Location:</span> Santa Ana, El Salvador</p>
+                <p><span class="label">Language:</span> Spanish</p>
+                <p><span class="label">Currency:</span> United States Dollar (USD)</p>
+                <p><span class="label">Time Zone:</span> UTC−6</p>
+                <p><span class="label">Calling Code:</span> +503</p>
+                <p><span class="label">Internet TLD:</span> .sv</p>
+                <p><span class="label">Type:</span> Stratovolcano</p>
+                <p><span class="label">Last Eruption:</span> 2005</p>
+                <p><span class="label">Nearby City:</span> Santa Ana</p>
+                <p><span class="label">Coordinates:</span> 13.850°N, 89.630°W</p>
+            </section>
+
+            <!-- PANEL WEATHER -->
+            <section class="weather">
+                <h2>Weather</h2>
+                <img id="weatherIcon" src="images/partly-cloudy.svg" alt="Partly Cloudy" class="weather-icon"
+                    onerror="this.style.display='none';">
+                <p><span class="label">Temperature:</span> <span id="temperature"></span></p>
+                <p><span class="label">Condition:</span> <span id="condition"></span></p>
+                <p><span class="label">Wind:</span> <span id="wind"></span></p>
+                <p><span class="label">Wind Chill:</span> <span id="windChill"></span></p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p class="footer-line1">
+            © <span id="currentYear"></span> 💻 Carlos Enrique Guardado Cruz 💻 El Salvador
+        </p>
+        <p class="footer-line2">
+            Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+
+</body>
+
+</html>

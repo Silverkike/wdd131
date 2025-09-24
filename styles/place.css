@@ -1,0 +1,164 @@
+:root {
+    --clr-es-blue: blue;
+    /* El Salvador blue */
+    --clr-h2-bg: #7f0000;
+    /* Volcano red for h2 and band */
+    --clr-white: #ffffff;
+    --clr-card: rgba(255, 255, 255, 0.9);
+    --txt-dark: #222;
+    --txt-muted: #555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--clr-white);
+    color: var(--txt-dark);
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+/* HEADER */
+header {
+    background: var(--clr-es-blue);
+    color: var(--clr-white);
+    text-align: center;
+    padding: 3rem 0;
+}
+
+/* FRANJA */
+.color-band {
+    width: 100%;
+    height: 30px;
+    background: var(--clr-h2-bg);
+}
+
+/* MAIN HERO */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* PANEL DATA */
+.data {
+    position: absolute;
+    top: 8%;
+    /* más arriba */
+    left: 5%;
+    background: var(--clr-card);
+    padding: 2rem 1rem 1rem;
+    /* padding-top extra para el h2 superpuesto */
+    border-radius: 8px;
+    width: 28%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* PANEL WEATHER */
+.weather {
+    position: absolute;
+    top: 60%;
+    /* más abajo */
+    right: 5%;
+    background: var(--clr-card);
+    padding: 2rem 1rem 1rem;
+    border-radius: 8px;
+    width: 28%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* TITULOS DE PANEL */
+section h2 {
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    /* sale del borde izquierdo */
+    background: var(--clr-h2-bg);
+    color: var(--clr-white);
+    display: inline-block;
+    padding: 0.3rem 4rem;
+    font-size: 1.2rem;
+    border-radius: 13px;
+    margin: 0;
+}
+
+/* PARRAFOS EN PANEL */
+section p {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.4rem 0;
+}
+
+.label {
+    font-weight: bold;
+    color: var(--txt-muted);
+}
+
+/* SVG ICON MOBILE */
+.weather-icon {
+    display: block;
+    width: 30px;
+    margin: 0.5rem auto 1rem auto;
+}
+
+/* RESPONSIVE: ocultar SVG y usar emoticon en desktop */
+@media (min-width: 768px) {
+    .weather-icon {
+        display: none !important;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+        font-size: 1.2rem;
+        vertical-align: middle;
+    }
+}
+
+/* MOBILE: apilar debajo de la imagen */
+@media (max-width: 767px) {
+
+    .data,
+    .weather {
+        position: static;
+        width: auto;
+        margin: 1rem 0;
+        background: var(--clr-white);
+        padding: 1rem;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    section h2 {
+        position: static;
+        margin: 0 0 0.5rem;
+    }
+}
+
+/* FOOTER */
+footer {
+    background: var(--clr-es-blue);
+    color: var(--clr-white);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer-line1,
+.footer-line2 {
+    margin: 0.2rem 0;
+    font-size: 1.3rem;
+}
