@@ -1,4 +1,5 @@
 :root {
+    --font-base: 'Roboto', sans-serif;
     --clr-es-blue: blue;
     /* El Salvador blue */
     --clr-h2-bg: #7f0000;
@@ -15,9 +16,9 @@
     box-sizing: border-box;
 }
 
-/* Aplica la fuente desde Google Fonts */
+/* Aplica la fuente Roboto cargada vía <link> */
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font-base);
     background: var(--clr-white);
     color: var(--txt-dark);
     line-height: 1.6;
