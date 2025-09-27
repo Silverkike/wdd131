@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple Album - A picture album of my favorite temples.">
+    <meta name="author" content="Carlos Enrique Guardado Cruz">
+
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <link rel="preload" href="https://fonts.gstatic.com/s/storyscript/v1/storyscript-regular.woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="site-title">Temple Album</h1>
+
+        <!-- Hamburger menu button para móvil -->
+        <button class="hamburger" aria-label="Toggle navigation menu">☰</button>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>My Favorite Temples</h2>
+        <section id="temples"></section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> 💻 Carlos Enrique Guardado Cruz 💻 El Salvador</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</body>
+
+</html>
