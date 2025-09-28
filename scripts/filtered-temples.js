@@ -55,22 +55,43 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
+    {
+        templeName: "Accra Ghana",
+        location: "Accra, Ghana",
+        dedicated: "2004, January, 11",
+        area: 17500,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-5151.jpg"
+    },
+    {
+        templeName: "Paris France",
+        location: "Le Chesnay, France",
+        dedicated: "2017, May, 21",
+        area: 44000,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2056.jpg"
+    },
+    {
+        templeName: "Tokyo Japan",
+        location: "Tokyo, Japan",
+        dedicated: "1980, October, 27",
+        area: 52900,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/tokyo-japan-temple/tokyo-japan-temple-8154.jpg"
+    }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Mostrar año actual
     const yearElement = document.getElementById("currentyear");
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();
     }
 
-    // Mostrar fecha de última modificación
     const lastModifiedElement = document.getElementById("lastModified");
     if (lastModifiedElement) {
         lastModifiedElement.textContent = document.lastModified;
     }
 
-    // Funcionalidad de clic en imágenes
     const templeImages = document.querySelectorAll('.temple-img');
     templeImages.forEach(img => {
         img.addEventListener('click', () => {
@@ -79,19 +100,17 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Hamburger menu
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('nav ul');
 
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('show');
-        // Cambiar el icono a X cuando se abre
         hamburger.textContent = navLinks.classList.contains('show') ? '✖' : '☰';
     });
 
     function displayTemples(templesList) {
         const container = document.getElementById("temples");
-        container.innerHTML = ""; // Limpiar contenido previo
+        container.innerHTML = "";
 
         templesList.forEach((temple) => {
             const card = document.createElement("section");
@@ -123,6 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
             container.appendChild(card);
         });
     }
+
     displayTemples(temples);
 
     function filterTemples(criteria) {
@@ -150,8 +170,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelectorAll(".nav-links a").forEach(link => {
         link.addEventListener("click", (e) => {
-            e.preventDefault(); // Evita que el enlace recargue la página
-            const filter = link.textContent.toLowerCase(); // "home", "old", etc.
+            e.preventDefault();
+            const filter = link.textContent.toLowerCase();
             filterTemples(filter);
         });
     });

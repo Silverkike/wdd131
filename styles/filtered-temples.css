@@ -168,3 +168,10 @@ nav ul.show {
         text-align: center;
     }
 }
+
+.temple-img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
