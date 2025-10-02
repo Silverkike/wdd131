@@ -1,0 +1,63 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #003366;
+    color: #c5c8cf;
+    padding: 2rem;
+}
+
+h1,
+h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #c5c8cf;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.highlight {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+/* Estilos para los enlaces */
+a:link {
+    color: #ffcc00;
+    /* amarillo brillante para enlaces no visitados */
+    text-decoration: none;
+    /* opcional: quita el subrayado */
+}
+
+a:visited {
+    color: #ff9966;
+    /* naranja suave para enlaces visitados */
+}
+
+a:hover {
+    color: #ffffff;
+    /* blanco al pasar el mouse */
+    text-decoration: underline;
+    /* opcional: muestra subrayado en hover */
+}
+
+a:active {
+    color: #ff3300;
+    /* rojo al hacer clic */
+}
+
+/* Aumentar tamaño de los enlaces */
+a {
+    font-size: 18pt;
+}
