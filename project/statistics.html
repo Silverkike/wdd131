@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Statistics and User Guides for the 911 Emergency Call Center of El Salvador.">
+    <meta name="author" content="Carlos Enrique Guardado Cruz">
+
+    <title>Statistics and User Guides – 911 PNC Emergency Call Center</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/911-emergencias-logo.webp" alt="PNC Logo" class="logo">
+            </div>
+            <nav>
+                <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Operators and Training</a></li>
+                    <li><a href="statistics.html">Statistics and User Guides</a></li>
+                    <li><a href="contact.html">Suggestions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="stats-section">
+            <div class="stats-content">
+                <h2>Key Statistics</h2>
+                <ul>
+                    <li>Average response time: 3 minutes</li>
+                    <li>Calls handled per day: 12,000+</li>
+                    <li>Coverage: Nationwide</li>
+                    <li>Operator availability: 24/7</li>
+                    <li>Dispatch accuracy rate: 98%</li>
+                </ul>
+            </div>
+            <div class="stats-image">
+                <img src="images/911-statistics.webp" alt="911 statistics chart" loading="lazy">
+            </div>
+        </section>
+
+        <section class="guides-section">
+            <div class="guides-image">
+                <img src="images/woman-calling-911.webp" alt="Woman calling 911" loading="lazy">
+            </div>
+            <div class="guides-content">
+                <h2>User Guides: Responsible Use of 911</h2>
+                <p>The 911 Emergency Call Center is a vital resource for saving lives and protecting communities. To
+                    ensure its effectiveness, users must follow these guidelines:</p>
+                <ul>
+                    <li><strong>Call only for real emergencies:</strong> Use 911 for crimes in progress, medical
+                        emergencies, fires, accidents, or life-threatening situations.</li>
+                    <li><strong>Provide accurate information:</strong> Stay calm and clearly state your location, the
+                        nature of the emergency, and any relevant details.</li>
+                    <li><strong>Do not hang up:</strong> Remain on the line until the operator tells you it's okay to
+                        disconnect.</li>
+                    <li><strong>Do not prank call:</strong> False or non-serious calls waste resources and delay help
+                        for real emergencies.</li>
+                    <li><strong>Teach children:</strong> Educate young family members on when and how to use 911
+                        responsibly.</li>
+                    <li><strong>Use alternative numbers for non-emergencies:</strong> Contact local police stations or
+                        health services for routine matters.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 911 PNC Emergency Call Center</p>
+        <a href="references.html">References</a>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>

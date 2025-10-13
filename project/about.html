@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Official website of the 911 Emergency Call Center of the National Civil Police of El Salvador.">
+    <meta name="author" content="Carlos Enrique Guardado Cruz">
+
+    <title>About – 911 PNC Emergency Call Center</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/911-emergencias-logo.webp" alt="PNC Logo" class="logo">
+            </div>
+            <nav>
+                <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Operators and Training</a></li>
+                    <li><a href="statistics.html">Statistics and User Guides</a></li>
+                    <li><a href="contact.html">Suggestions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="overview">
+            <h2>How the 911 Call Center Works</h2>
+            <p>The 911 Emergency Call Center operates 24/7 to respond to urgent situations across El Salvador. Calls are
+                received by trained operators who assess the emergency and dispatch the appropriate units—police,
+                medical, or fire services.</p>
+            <div class="image-grid">
+                <img src="images/911-operator-1.webp" alt="Operator dispatching emergency units" loading="lazy">
+                <img src="images/911-facade.webp" alt="911 building facade" loading="lazy">
+            </div>
+        </section>
+
+        <section class="team">
+            <h3>Our Operators</h3>
+            <p>911 operators undergo rigorous training in communication, crisis management, and emergency protocols.
+                They are skilled professionals dedicated to saving lives and maintaining public safety.</p>
+            <div class="image-grid">
+                <img src="images/911-callcenter-1.webp" alt="911 call center interior" loading="lazy">
+                <img src="images/911-operator-3.webp" alt="Operator at workstation" loading="lazy">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 911 PNC Emergency Call Center</p>
+        <a href="references.html">References</a>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>
